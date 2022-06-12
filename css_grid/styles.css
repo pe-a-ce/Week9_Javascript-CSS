@@ -1,0 +1,41 @@
+div{ /*element selector, instead of class/id so EVERY div will have these properties*/
+    height: 100px;
+    border: 1px solid black;
+}
+
+#grid-container{ /* # <- used for id */
+    display: grid;
+    grid-template-areas: 
+        'header header'
+        'sidebar main'
+        'footer footer';
+        /*
+        specifies areas within the grid layout
+        H | H         H|H|H      H|H|H
+        S | M    or   S|M|M or   S|M|M
+        F | F         F|M|M      S|M|M
+                                 F|F|F
+        */
+        grid-template-columns: 3fr 7fr;
+        /* grid template columns: specifies the number (and the widths) of columns in a grid layout. */
+}
+
+#header{
+    grid-area: header;
+    background-color: #e9c99d;
+}
+
+#sidebar{
+    grid-area: sidebar;
+    background-color: #fad8b3;
+}
+
+#main{
+    grid-area: main;
+    background-color: #bfa176;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: #ffebc6;
+}

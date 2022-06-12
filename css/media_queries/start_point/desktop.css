@@ -1,0 +1,24 @@
+@media (min-width:1080){
+    body > main{ /* '>' for any main that is inside the body component, the following will apply*/
+        display: grid;
+        grid-template-areas: none
+                'title title'
+                'post navigation';
+                grid-template-areas: 2fr 8fr;
+    }
+
+    .title-section{
+        grid-area: title;
+    }
+
+    .posts{
+        grid-area: posts;
+    }
+
+    .navigation{
+        grid-area: navigation;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+}

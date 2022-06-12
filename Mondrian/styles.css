@@ -1,0 +1,38 @@
+div{ /*element selector, instead of class/id so EVERY div will have these properties*/
+    height: 100px;
+    border: 1px solid black;
+}
+#grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header main main'
+    'header header main main'
+    'header header main2 footer'
+    ;
+    
+}
+
+#header{
+    grid-area: header;
+    background-color: red
+}
+
+/* #sidebar{
+    grid-area: sidebar;
+    background-color: yellow;
+} */
+
+#main{
+    grid-area: main;
+    background-color: yellow;
+}
+
+#main2{
+    grid-area: main;
+    background-color: #bfa176;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: #ffebc6;
+}

@@ -1,0 +1,25 @@
+.body__div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black; /* 3 args, thickness, style, colour */
+    margin-bottom: 10px;
+}
+
+.body__div--wide{
+    flex: 50%; /*the min amount of space needed to be taken by this element*/
+}
+
+.body__div--first{
+    order: -1; /*prioritises order in flexbox, default is 1 so -1 will go first*/
+}
+.body__div--last{
+    order: 2; /*since everything is default 1, 2 will go last */
+}
+
+body{ /* things that need to be set on the container; not individually */
+    display: flex; /* how we position the things in this element, so now everything below the body will use flexbox*/
+    /* flex-direction: determines which way the elements run, i.e ABC or CBA(row) or columned */
+    /* flex-wrap: repositions elements on the page instead of just resizing when it has to run over the edge of the page */
+    flex-flow: row wrap; /* combines the two; direction and wrap*/
+    justify-content: space-evenly; /*controlling how flex and grid items are positioned along a container's main axis.*/
+}

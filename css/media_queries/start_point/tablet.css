@@ -1,0 +1,19 @@
+/*
+@ media - only applicable when a certain condition is met
+otherwise it'll use the styles.css default
+*/
+
+@media (min-width: 720px){
+    /*so when the min screen width is >720px, the element will change to new properties*/
+   
+    aside{
+        display: flex;
+        justify-content: space-around;
+    }
+    /* we added 2 divs in the html, as to seperate the two parts of the aside element*/
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+    }
+}
